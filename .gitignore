@@ -91,7 +91,6 @@ php_errorlog
 /README.md
 /LICENSE
 /autoload.php
-/scripts
 /drush
 /web/sites/all
 /web/sites/default/default.services.yml
