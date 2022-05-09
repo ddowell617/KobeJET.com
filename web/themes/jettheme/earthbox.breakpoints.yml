@@ -1,0 +1,28 @@
+earthbox.sm:
+  label: Small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+earthbox.md:
+  label: Medium
+  mediaQuery: 'all and (min-width: 720px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+earthbox.lg:
+  label: Large
+  mediaQuery: 'all and (min-width: 1366px)'
+  weight: 2
+  multipliers:
+    - 1x
+earthbox.xl:
+  label: Extra Large
+  mediaQuery: 'all and (min-width: 1920px)'
+  weight: 3
+  multipliers:
+    - 1x

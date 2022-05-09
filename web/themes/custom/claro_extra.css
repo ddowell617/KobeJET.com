@@ -1,0 +1,120 @@
+/* Add the following to /web/core/themes/claro/claro.libraries.yml
+
+# At the bottom of global-styling
+global-styling:
+  css:
+    component:
+      ..
+      ..
+      ..
+      css/components/views-ui.css: {}
+      ../../../themes/custom/claro_extra.css: {} */
+
+/* Claro overrides */
+  /* node edit pages */
+@media screen and (min-width: 61rem) {
+  .layout-region--node-main .layout-region__content, .layout-region--node-footer .layout-region__content {
+    max-width: none;
+  }
+}
+
+/* General */
+.flex,
+.flex .fieldset__wrapper {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+}
+.flex > .fieldset__wrapper > * > .form-item {
+    margin: 0;
+}
+  
+/* Tickets */
+.view-tickets .view-filters::after {
+    content: "Click 'title' link to edit or view ticket page.";
+    font-size: .8rem;
+}
+.region-content .view-tickets .views-exposed-form {
+    margin-bottom: .5rem;
+}
+
+.form-item--field-priority-target-id option:nth-child(2) {
+    background: rgba(255,0,0,.2);
+}
+.form-item--field-priority-target-id option:nth-child(3) {
+    background: rgba(255,165,0,.2);
+}
+.form-item--field-priority-target-id option:nth-child(4) {
+    background: rgba(255,255,0,.2);
+}
+
+.Critical td {
+    background: linear-gradient(#ffb1b1, #ffe5e5 2px, transparent 30%, transparent 70%, #ffe5e5 calc(100% - 2px), #ffb1b1);
+    /* border-top: 1px solid #ffb1b1; */
+}
+.Major td {
+    background: linear-gradient(#ffe4b1, #fff6e5 2px, transparent 30%, transparent 70%, #fff6e5 calc(100% - 2px), #ffe4b1);
+    /* border-top: 1px solid #ffe4b1; */
+}
+.Normal td {
+    background: linear-gradient(#feffb1, #ffffe5 2px, transparent 30%, transparent 70%, #ffffe5 calc(100% - 2px), #feffb1);
+    /* border-top: 1px solid #feffb1; */
+}
+
+.view-tickets .spin {
+    position: absolute;
+    margin-left: 7px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+.view-tickets .view-footer .flex {
+    display: flex;
+    align-items: flex-end;
+    gap: 7px;
+}
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(-360deg);
+    }
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg); }
+    }
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform:rotate(-360deg);
+    }
+}
+
+/* Flags (bookmarks) */
+.action-flag, .action-unflag:hover {
+    background: url(/themes/custom/images/icon-green-star.svg) no-repeat;
+}
+.action-unflag {
+    background: url(/themes/custom/images/icon-green-star-fill.svg) no-repeat;
+}
+.flag-follow, .flag-follow:hover {
+    display: inherit;
+    background-size: 18px;
+    background-position: 0px;
+}
+.flag-follow a {
+    padding-left: 22px;
+}
+.action-unflag:hover a {
+    color: transparent;
+}
+.action-unflag:hover::before {
+    content: "Unfollow";
+    position: absolute;
+    padding-left: 22px;
+    color: #00adee;
+    text-decoration: underline;
+    pointer-events: none;
+}
+  

@@ -1,0 +1,92 @@
+background.xs:
+  label: extra small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+background.320x568:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 320px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+background.360x640:
+  label: screen-sm-min
+  mediaQuery: 'all and (min-width: 360px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+background.375x667:
+  label: screen-sm-min
+  mediaQuery: 'all and (min-width: 375px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+background.480x800:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 480px)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x
+background.720x1280:
+  label: screen-md-min
+  mediaQuery: 'all and (min-width: 720px)'
+  weight: 5
+  multipliers:
+    - 1x
+    - 2x
+background.768x1024:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 768px)'
+  weight: 6
+  multipliers:
+    - 1x
+    - 2x
+background.1024x768:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 1024px)'
+  weight: 7
+  multipliers:
+    - 1x
+    - 2x
+background.1280x1024:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 1280px)'
+  weight: 8
+  multipliers:
+    - 1x
+    - 2x
+background.1366x768:
+  label: screen-sm-min
+  mediaQuery: 'all and (min-width: 1366px)'
+  weight: 9
+  multipliers:
+    - 1x
+    - 2x
+background.1440x900:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 1440px)'
+  weight: 10
+  multipliers:
+    - 1x
+    - 2x
+background.1600x900:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 1600px)'
+  weight: 11
+  multipliers:
+    - 1x
+    - 2x
+background.1920x1080:
+  label: screen-lg-min
+  mediaQuery: 'all and (min-width: 1920px)'
+  weight: 12
+  multipliers:
+    - 1x
+    - 2x

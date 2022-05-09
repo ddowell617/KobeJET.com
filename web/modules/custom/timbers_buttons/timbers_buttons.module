@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function timbers_buttons_theme($existing, $type, $theme, $path) {
+  return [
+    'timbers_buttons' => [
+      'template' => 'timbers--content',
+      'render element' => 'elements',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_page_bottom().
+ */
+function timbers_buttons_page_bottom(array &$page_bottom) {
+  $page_bottom['timbers_buttons'] = [
+    '#theme' => 'timbers_buttons',
+  ];
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function timbers_buttons_page_attachments_alter(array &$attachments) {
+  $attachments['#attached']['library'][] = 'timbers_buttons/timbers';
+}

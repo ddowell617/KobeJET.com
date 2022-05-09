@@ -1,0 +1,76 @@
+/* Slick - Gallery */
+.slick--skin--boxed > .slick__slider > .slick-list {
+  margin: 0;
+}
+.slick--thumbnail.slick--skin--asnavfor .slick-track {
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.slick--thumbnail.slick--skin--asnavfor .slick-list {
+  margin: 0 40px;
+  padding: 0;
+}
+.slick--thumbnail.slick--skin--asnavfor .slick-track {
+  padding: 5px 0;
+}
+.slick--thumbnail.slick--skin--asnavfor .slick__slide {
+  float: left; /* fixes display: inline-block undesired extra margin at bottom for thumbnails */
+  margin: 0;
+}
+.slick--thumbnail.slick--skin--asnavfor .slick__slide .litebox img {
+  position: absolute;
+}
+.slick-slide {
+  display: block;
+  box-shadow: none;
+  transform: scale(1);
+  transition: box-shadow 1s ease, transform 1s ease;
+}
+.slick-slide.slick-current.slick-active.slick-center {
+  position: relative;
+  /* -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+          box-shadow: 0 0 10px rgba(0,0,0,0.4); */
+  transform: scale(1.3);
+  transition-delay: 0s;
+  z-index: 4;
+}
+.slick-slide.slick-current.slick-active.slick-center::before {
+  content: '';
+  display: block;
+  border: 8px solid transparent;
+    border-top-color: transparent;
+    border-top-style: solid;
+    border-top-width: 8px;
+    border-bottom-color: transparent;
+  border-top: 0;
+  border-bottom-color: #fff;
+  height: 0;
+  left: 50%;
+  margin-left: -8px;
+  position: absolute;
+  top: -5px;
+  width: 0;
+  z-index: 1;
+}
+.slick-arrow {
+  -webkit-filter:  drop-shadow(3px 0px 5px transparent);
+          filter:  drop-shadow(3px 0px 5px transparent);
+  transform: scale(1) translateY(-50%);
+  transition: left .5s ease-out, right .5s ease-out, transform .5s ease-out, -webkit-filter .5s ease-out;
+  transition: left .5s ease-out, right .5s ease-out, transform .5s ease-out, filter .5s ease-out;
+  transition: left .5s ease-out, right .5s ease-out, transform .5s ease-out, filter .5s ease-out, -webkit-filter .5s ease-out;
+}
+.slick-arrow:hover {
+  -webkit-filter: drop-shadow(3px 0px 5px white);
+          filter: drop-shadow(3px 0px 5px white);
+  transform: scale(1.2) translateY(-42%);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@media screen and (max-width: 600px) {
+  /* Slick Carousel */
+  .slick--optionset--carousel .slick-list {
+    overflow: initial;
+  }
+}

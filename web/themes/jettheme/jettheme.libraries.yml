@@ -1,0 +1,16 @@
+kobejet.com:
+  css:
+    theme:
+      css/slick.css: {}
+      css/style.css: {}
+      css/temporary.css: {}
+  js:
+    js/gearspin.js: {}
+    js/modaljs.js: {}
+    js/ultimenuclick.js: {}
+    js/search-collapse.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once

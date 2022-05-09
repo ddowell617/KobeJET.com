@@ -1,0 +1,32 @@
+bootstrap.xs:
+  label: extra small
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 1.5x
+    - 2x
+bootstrap.sm:
+  label: small
+  mediaQuery: 'all and (min-width: 600px)'
+  weight: 1
+  multipliers:
+    - 1x
+bootstrap.md:
+  label: medium
+  mediaQuery: 'all and (min-width: 900px)'
+  weight: 2
+  multipliers:
+    - 1x
+bootstrap.lg:
+  label: large
+  mediaQuery: 'all and (min-width: 1200px)'
+  weight: 3
+  multipliers:
+    - 1x
+bootstrap.super:
+  label: super
+  mediaQuery: 'all and (min-width: 1800px)'
+  weight: 4
+  multipliers:
+    - 1x

@@ -1,0 +1,1 @@
+../../../../../../../timbers8/public_html/themes/timberstheme/js/global.js

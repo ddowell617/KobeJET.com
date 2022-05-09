@@ -1,0 +1,15 @@
+timbers:
+  version: 1.0
+  js:
+    js/timbers-buttons.js: {}
+  css:
+    theme:
+      css/global.css: {}
+      css/timbers.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - core/jquery.ui.core
+    - core/jquery.ui.effects.core

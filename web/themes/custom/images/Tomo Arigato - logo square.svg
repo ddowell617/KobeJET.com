@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" fill="none" version="1.1" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <path d="m21.22 32.41c0.1034 0.7813-0.7223 1.355-1.446 1.005l-8.99-4.352c-0.6879-0.333-0.7685-1.261-0.147-1.693l7.705-5.354c0.6215-0.4318 1.495-0.0548 1.593 0.688z" fill="#f4f8ef"/>
+ <ellipse transform="matrix(.8097 -.5869 .6064 .7952 0 0)" cx="-3.657" cy="22.47" rx="8.717" ry="11.21" fill="url(#paint0_linear)"/>
+ <path d="m20.19 33.35c-0.3888 0.6876-1.384 0.675-1.754-0.0222l-4.615-8.691c-0.3564-0.671 0.1367-1.479 0.8966-1.469l9.461 0.1201c0.76 0.0096 1.231 0.8298 0.8572 1.492z" fill="#a4d7e8"/>
+ <ellipse transform="matrix(1 -.006959 .007321 1 0 0)" cx="19.08" cy="17.38" rx="8.794" ry="11.1" fill="url(#paint1_linear)"/>
+ <path d="m18.72 32.38c-0.1064 0.781 0.7172 1.358 1.442 1.01l9.006-4.319c0.6892-0.3305 0.7732-1.258 0.1533-1.692l-7.684-5.382c-0.6199-0.4341-1.494-0.0603-1.596 0.682z" fill="#b4e2d3"/>
+ <ellipse transform="matrix(-.8075 -.5899 -.6093 .7929 0 0)" cx="-35.46" cy="-1.133" rx="8.716" ry="11.21" fill="url(#paint2_linear)"/>
+ <defs>
+  <linearGradient id="paint0_linear" x1="7.732" x2="7.374" y1="-1.655" y2="24.41" gradientTransform="matrix(1 0 0 1 -3.657 22.47)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#E0EAD6" offset="0"/>
+   <stop stop-color="#E7EEDF" offset=".4705"/>
+   <stop stop-color="#F7FAF3" offset="1"/>
+  </linearGradient>
+  <linearGradient id="paint1_linear" x1="8.475" x2="8.24" y1="-3.922" y2="29.81" gradientTransform="matrix(1 0 0 .9999 19.08 17.38)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#569FB8" offset="0"/>
+   <stop stop-color="#78C2DA" offset=".4094"/>
+   <stop stop-color="#C4E6F1" offset="1"/>
+  </linearGradient>
+  <linearGradient id="paint2_linear" x1="8.063" x2="7.149" y1="-5.857" y2="34.53" gradientTransform="matrix(1 0 0 1 -35.46 -1.133)" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#56B89A" offset="0"/>
+   <stop stop-color="#99DAC2" offset=".4423"/>
+   <stop stop-color="#D9EBE8" offset="1"/>
+  </linearGradient>
+ </defs>
+</svg>

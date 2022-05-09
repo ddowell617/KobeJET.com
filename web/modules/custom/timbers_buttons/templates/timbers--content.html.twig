@@ -1,0 +1,121 @@
+{#
+/**
+ * @file
+ * Timbers content.
+ */
+#}
+<div class="block-timbers">
+  <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+
+  <button class="menu-open-button back-to-top">
+    <span class="sr-only visually-hidden">{{'Scroll to top'|t }}</span>
+    <span class="arrow arrow-1"></span>
+    <span class="arrow arrow-2"></span>
+  </button>
+
+  <label role="button" name="Timbers websites" class="menu-open-button burger-menu" for="menu-open">
+    <span class="sr-only visually-hidden">{{'Timbers websites'|t }}</span>
+    <span class="hamburger hamburger-1"></span>
+    <span class="hamburger hamburger-2"></span>
+    <span class="hamburger hamburger-3"></span>
+  </label>
+
+  <span class="site-item">
+    <span class="sitebridge"></span>
+    <a class="siteicon" href="https://www.timbers.space" target="_blank" rel="noopener">
+      <span class="sitename">
+        {{'Timbers Space'|t }}
+      </span>
+      <svg width="50" height="50" style="margin-top: 4px" aria-hidden="true" focusable="false">
+        <use href="/modules/custom/timbers_buttons/icons/Icons.svg#Timbers-Space"></use>
+      </svg>
+    </a>
+  </span>
+  <span class="site-item">
+    <span class="sitebridge"></span>
+    <a class="siteicon" href="https://www.kobejet.com" target="_blank" rel="noopener">
+      <span class="sitename">
+        {{'Kobe JET'|t }}
+      </span>
+      <svg width="50" height="50" aria-hidden="true" focusable="false">
+        <use href="/modules/custom/timbers_buttons/icons/Icons.svg#Kobe-JET"></use>
+      </svg>
+    </a>
+  </span>
+  <span class="site-item">
+    <span class="sitebridge"></span>
+    <a class="siteicon" href="https://www.dowellconsulting.com" target="_blank" rel="noopener">
+      <span class="sitename">
+        {{'Dowell Consulting'|t }}
+      </span>
+      <svg width="50" height="50" aria-hidden="true" focusable="false">
+        <use href="/modules/custom/timbers_buttons/icons/Icons.svg#Dowell-Consulting"></use>
+      </svg>
+    </a>
+  </span>
+  <span class="site-item">
+    <span class="sitebridge"></span>
+    <a class="siteicon" href="https://www.dowell.media" target="_blank" rel="noopener">
+      <span class="sitename">
+        {{'Dowell Media'|t }}
+      </span>
+      <svg width="50" height="50" aria-hidden="true" focusable="false">
+         <use href="/modules/custom/timbers_buttons/icons/Icons.svg#Dowell-Media"></use>
+      </svg>
+    </a>
+  </span>
+  <span class="site-item">
+    <span class="sitebridge"></span>
+    <a class="siteicon" href="https://www.backseatbandits.com" target="_blank" rel="noopener">
+      <span class="sitename">
+        {{'Backseat Bandits'|t }}
+      </span>
+      <svg width="50" height="50" aria-hidden="true" focusable="false">
+        <use href="/modules/custom/timbers_buttons/icons/Icons.svg#Backseat-Bandits"></use>
+      </svg>
+    </a>
+  </span>
+  <span class="site-item">
+    <span class="sitebridge"></span>
+    <a class="siteicon" href="https://www.youpickfarms.org" target="_blank" rel="noopener">
+      <span class="sitename">
+        {{'You Pick Farms'|t }}
+      </span>
+      <svg width="50" height="50" aria-hidden="true" focusable="false">
+        <use href="/modules/custom/timbers_buttons/icons/Icons.svg#You-Pick-Farms"></use>
+      </svg>
+    </a>
+  </span>
+  <span class="site-item">
+    <span class="sitebridge"></span>
+    <a class="siteicon" href="https://www.welovemaira.com" target="_blank" rel="noopener">
+      <span class="sitename">
+        {{'We Love Maira'|t }}
+      </span>
+      <svg width="50" height="50" aria-hidden="true" focusable="false">
+        <use href="/modules/custom/timbers_buttons/icons/Icons.svg#We-Love-Maira"></use>
+      </svg>
+    </a>
+  </span>
+</div>
+
+<!-- filters -->
+<svg class="goo" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+	<defs>
+		<filter id="shadowed-goo">
+			<feGaussianBlur in="SourceGraphic" result="blur" stddeviation="10"/>
+			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"/>
+			<feGaussianBlur in="goo" stddeviation="3" result="shadow"/>
+			<feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow"/>
+			<feOffset in="shadow" dx="1" dy="1" result="shadow"/>
+			<feBlend in2="shadow" in="goo" result="goo"/>
+			<feBlend in2="goo" in="SourceGraphic" result="mix"/>
+		</filter>
+
+		<filter id="goo">
+			<feGaussianBlur in="SourceGraphic" result="blur" stddeviation="10"/>
+			<feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"/>
+			<feBlend in2="goo" in="SourceGraphic" result="mix"/>
+		</filter>
+	</defs>
+</svg>
