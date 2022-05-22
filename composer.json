@@ -92,6 +92,7 @@
         "drupal/lang_dropdown": "^2.0@beta",
         "drupal/languagefield": "^1.5",
         "drupal/languageicons": "^1.0@beta",
+        "drupal/layout_builder_styles": "^1.0@beta",
         "drupal/leaflet": "^2.1",
         "drupal/libraries": "^3.0@alpha",
         "drupal/linked_field": "^1.1",
@@ -219,6 +220,7 @@
                 "Fix pathing": "https://www.drupal.org/files/issues/2020-03-13/anchor_link-Wrong_path_to_libraries_in_current_profile-3119099-4.patch"
             },
             "drupal/core": {
+                "Drupal alter's svg fill path's with base url -> broken svg": "https://www.drupal.org/files/issues/2021-11-04/drupal-9.3.x-fix_broken_svg-2362643-81.patch",
                 "remove stuff": "https://www.drupal.org/files/issues/2020-01-10/2836539-34.patch"
             },
             "drupal/metatag": {

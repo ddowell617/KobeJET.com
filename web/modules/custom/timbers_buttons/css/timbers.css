@@ -18,17 +18,8 @@ svg.goo {
   z-index: 999;
   transform: translate(3em, 8em) scale(0.8);
   transition: transform 200ms ease-out;
-  /* works for homepages - but need relative (#shadowed-goo) for all pages
-    - relative breaks currently though as mentioned below
-    currently breaks with advagg - ticket opened at:
-    https://www.drupal.org/project/advagg/issues/3087226
-    might need to change to url('/#goo')
-    SVG edge tearing iOS mobile
-    - emoved until 8.8-8.9 patch fixes aggregation url rewriting - https://www.drupal.org/project/drupal/issues/2362643
-  */
-  /* Moved to desktop only until svg shearing/cascade interference can be sorted
-  -webkit-filter: url("/#shadowed-goo");
-          filter: url("/#shadowed-goo"); */
+  -webkit-filter: url("#shadowed-goo");
+    filter: url("#shadowed-goo");
 }
 
 /* Override for Bootstrap, etc. * styling */
@@ -51,12 +42,11 @@ svg.goo {
     transform: translate(0, 0) scale(1.0);
   }
   /* Issues with goo:
-  - relative path makes only work on frontpage?
   - svg shearing/interference with cascade svg on mobile (perhaps desktop?) */
-  .path-frontpage .block-timbers {
+  /* .path-frontpage .block-timbers {
     -webkit-filter: url("/#shadowed-goo");
             filter: url("/#shadowed-goo");
-  }
+  } */
 }
 
 /* Buttons */

@@ -12,8 +12,8 @@ index b1ee36b..e830603 100644
 +  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,NE,L]
 +
 +  # then add www while keeping it https
-+  RewriteCond %{HTTP_HOST} !^www\. [NC]
-+  RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,NE,L]
++  RewriteCond %{HTTP_HOST} !^dev\. [NC]
++  RewriteRule ^ https://dev.%{HTTP_HOST}%{REQUEST_URI} [R=301,NE,L]
 +
    #
    # To redirect all users to access the site WITHOUT the 'www.' prefix,

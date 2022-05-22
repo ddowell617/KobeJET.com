@@ -230,6 +230,27 @@ body:not(.is-always-mobile-nav) .primary-nav__menu-item--level-1:last-child {
   }
 }
 
+/* Lesson filter button */
+.path-lesson .view-header {
+  margin: 0;
+}
+.filter-button svg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  filter: drop-shadow(2px 2px 2px rgb(0 0 0 / 0.6));
+}
+.filter-button svg path {
+  fill: #be0101;
+}
+@media (min-width: 62.5rem) {
+  .filter-button {
+    display: none;
+  }
+}
+
 a {
   color: #003cc5;
 }
