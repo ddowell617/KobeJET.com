@@ -12,8 +12,8 @@ index b1ee36b..e830603 100644
 +  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,NE,L]
 +
 +  # then add www while keeping it https
-+  RewriteCond %{HTTP_HOST} !^dev\. [NC]
-+  RewriteRule ^ https://dev.%{HTTP_HOST}%{REQUEST_URI} [R=301,NE,L]
++  RewriteCond %{HTTP_HOST} !^www\. [NC]
++  RewriteRule ^ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,NE,L]
 +
    #
    # To redirect all users to access the site WITHOUT the 'www.' prefix,
@@ -22,15 +22,6 @@ index b1ee36b..e830603 100644
    # Disable Proxy header, since it's an attack vector.
    RequestHeader unset Proxy
  </IfModule>
-+
-+# Allow access to Statistics module's custom front controller.
-+# Copy and adapt this rule to directly execute PHP files in contributed or
-+# custom modules or to run another PHP application in the same directory.
-+RewriteCond %{REQUEST_URI} !/core/modules/statistics/statistics.php$
-+RewriteCond %{REQUEST_URI} !/modules/contrib/give/give_problem_log.php$
-+# Deny access to any other PHP files that do not match the rules above.
-+# Specifically, disallow autoload.php from being served directly.
-+RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
 +
 +<If "%{HTTPS} == 'on'">
 +  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"

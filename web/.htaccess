@@ -190,15 +190,6 @@ AddEncoding gzip svgz
   RequestHeader unset Proxy
 </IfModule>
 
-# Allow access to Statistics module's custom front controller.
-# Copy and adapt this rule to directly execute PHP files in contributed or
-# custom modules or to run another PHP application in the same directory.
-RewriteCond %{REQUEST_URI} !/core/modules/statistics/statistics.php$
-RewriteCond %{REQUEST_URI} !/modules/contrib/give/give_problem_log.php$
-# Deny access to any other PHP files that do not match the rules above.
-# Specifically, disallow autoload.php from being served directly.
-RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
-
 <If "%{HTTPS} == 'on'">
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 </If>
@@ -209,3 +200,12 @@ RewriteRule "^(.+/.*|autoload)\.php($|/)" - [F]
   ExpiresByType image/jpg "access 1 year"
   ExpiresByType image/jpeg "access 1 year"
   ExpiresByType image/gif "access 1 year"
+  ExpiresByType image/png "access 1 year"
+  ExpiresByType text/css "access 1 month"
+  ExpiresByType text/html "access 1 month"
+  ExpiresByType application/pdf "access 1 month"
+  ExpiresByType text/x-javascript "access 1 month"
+  ExpiresByType application/x-shockwave-flash "access 1 month"
+  ExpiresByType image/x-icon "access 1 year"
+  ExpiresDefault "access 1 month"
+</IfModule>
